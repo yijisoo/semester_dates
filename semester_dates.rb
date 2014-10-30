@@ -2,13 +2,13 @@
 
 require 'date'
 
-class_days = "MWF"
-# class_days = "TR"
-
 days = ["M", "T", "W", "R", "F"]
-start_date = Date.new(2014, 1, 12)
 
-weeks = (0..15)
+# You have to adjust the following lines
+start_date = Date.new(2014, 1, 12) # Starting date of your semester. Should be Monday.
+weeks = (0..15) # A total of 16 weeks
+class_days = "MWF" # Monday, Wednesday, Friday classes
+# class_days = "TR" # Tuesday and thuRsday classes
 
 weeks.each do |week|
   week_start_date = start_date + week * 7
